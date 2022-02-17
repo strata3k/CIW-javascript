@@ -13,6 +13,9 @@
   value and returns a corresponding letter grade.
 ************************************************/
 
+
+
+
 function checkGrade(form) {
   var myGrade = form.myselect.options[form.myselect.selectedIndex].text; 
   if(myGrade >= 91) {
@@ -43,6 +46,11 @@ Select numerical grade value:
 
 <script type="text/javascript">
 <!--
+
+for (var i = 100; i >= 0; i--) {
+  document.write("<option> " +i+ "</option>");
+}
+
 
 /*********************************************************************
   Create a for statement. Inside the for definition, create a variable 
